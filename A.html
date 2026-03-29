@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 🎉</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to top, #000000, #050814, #0a0f2c);
+  min-height: 100vh;
+  color: #e0e0e0;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+/* ✨ Stars */
+.star {
+  position: absolute;
+  width: 1.5px;
+  height: 1.5px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.2; }
+  to { opacity: 0.7; }
+}
+
+/* ✍️ Typing */
+.typing {
+  width: 85%;
+  margin: 10px auto;
+  white-space: pre-line;
+  border-right: 2px solid white;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* 📦 Image */
+.image-box {
+  position: relative;
+  display: inline-block;
+  margin: 15px auto;
+}
+
+.image-box img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+/* 🎀 Ribbon */
+.ribbon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 40px;
+  transform: rotate(-20deg);
+}
+
+/* 🎬 Video Section */
+.video-container {
+  margin: 20px auto;
+  width: 85%;
+  max-width: 350px;
+}
+
+/* 🎬 Video */
+video {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+/* 🎬 Title */
+.video-title {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ✨ Stars -->
+<script>
+for (let i = 0; i < 100; i++) {
+  let s = document.createElement("div");
+  s.className = "star";
+  s.style.top = Math.random()*100+"vh";
+  s.style.left = Math.random()*100+"vw";
+  document.body.appendChild(s);
+}
+</script>
+
+<h1>Best wishes for my Bestestest frnd <h1> </h1> Sahanaa...! 🎂</h1>
+
+<div class="typing" id="text"></div>
+
+<!-- 📦 Image -->
+<div class="image-box">
+  <img src="eyes.jpg">
+  <div class="ribbon">🎀</div>
+</div>
+
+<!-- 🎬 Video -->
+<div class="video-container">
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+  </div >
+  </div> 
+  </div>
+  "We ended, yet it was beautiful” 
+</div>
+
+<script>
+const msg = `Again sorry for everything happened...!
+
+"Wishing you joy, love & happiness on your special day"
+Grace of Lord Shiva be with you!
+- by your classmate !`;
+
+let i = 0;
+function type() {
+  if(i < msg.length){
+    document.getElementById("text").innerHTML += msg[i];
+    i++;
+    setTimeout(type, 40);
+  }
+}
+type();
+</script>
+
+</body>
+</html>
